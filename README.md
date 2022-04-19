@@ -1,3 +1,3 @@
 # Project requirements
 
-<embed src = "/Teme Proiect .pdf" type="application/pdf">
+<embed src = "/Teme_proiect.pdf" type="application/pdf">
