@@ -1,3 +1,3 @@
 # Project requirements
 
-<embed src = "Teme_proiect.pdf" type="application/pdf">
+[Teme_proiect.pdf](https://github.com/alexdragnea/Homework_SDA/files/8512561/Teme_proiect.pdf)
