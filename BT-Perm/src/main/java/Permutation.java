@@ -1,5 +1,9 @@
+
 public class Permutation {
+
     public static void main(String args[]) {
+
+        final String MESSAGE = "Permutation of ";
 
         int ex1 = 123;
         int ex2 = 200;
@@ -7,16 +11,16 @@ public class Permutation {
         Permutation permutation = new Permutation();
         String numberToBePermutedEx1 = String.valueOf(ex1);
         String numberToBePermutedEx2 = String.valueOf(ex2);
-        String numberToBePermutedEx3 = String.valueOf(ex3);
 
-        System.out.println("Permutations of " + numberToBePermutedEx1 + " are:");
+
+        System.out.println(MESSAGE + numberToBePermutedEx1);
         permutation.permutation(numberToBePermutedEx1, 0, numberToBePermutedEx1.length() - 1);
 
-        System.out.println("Permutations of " + numberToBePermutedEx2 + " are:");
+        System.out.println(MESSAGE + numberToBePermutedEx2);
         permutation.permutation(numberToBePermutedEx2, 0, numberToBePermutedEx2.length() - 1);
 
-        System.out.println("Permutations of " + numberToBePermutedEx3 + " are:");
-        permutation.permutation(numberToBePermutedEx3, 0, numberToBePermutedEx3.length() - 1);
+        System.out.println(MESSAGE + ex3);
+        permutation.permutation(String.valueOf(ex3), 0, numberOfDigits(ex3) - 1);
     }
 
     // Method that does the permutation, str is the string to be permuted, startIndex is the starting index of the string, endIndex is the ending index of the string
@@ -32,7 +36,7 @@ public class Permutation {
         }
     }
 
-    // Method for swaping characters
+    // Method for swapping characters
     public String swapChar(String str, int i, int j) {
         char temp;
         char[] chArray = str.toCharArray();
@@ -40,5 +44,15 @@ public class Permutation {
         chArray[i] = chArray[j];
         chArray[j] = temp;
         return String.valueOf(chArray);
+    }
+
+    // Method for counting number of digits of a given number
+    public static int numberOfDigits(int n) {
+        int count = 0;
+        while (n != 0) {
+            count++;
+            n = n / 10;
+        }
+        return count;
     }
 }
