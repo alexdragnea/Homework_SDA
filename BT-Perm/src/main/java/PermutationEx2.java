@@ -1,0 +1,2 @@
+public class PermutationEx2 {
+}
